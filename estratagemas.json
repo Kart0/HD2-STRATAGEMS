@@ -87,7 +87,133 @@
     "id": "orbital-gatling-barrage",
     "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
     "name": { "es": "DESCARGA GATLING ORBITAL", "en": "ORBITAL GATLING BARRAGE" },
-    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/4/47/Orbital_Precision_Strike_Icon.png/revision/latest?cb=20240501071502",
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/e/e2/Orbital_Gatling_Barrage_Icon.png/revision/latest?cb=20240501071502",
     "combo": ["right", "down", "left", "up", "up"]
+  },
+  {
+    "id": "orbital-airburst-strike",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "ATAQUE DE EXPLOSIÓN AÉREA ORBITAL", "en": "ORBITAL AIRBURST STRIKE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/5/5d/Orbital_Airburst_Strike_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["right", "right", "right"]
+  },
+  {
+    "id": "orbital-napalm-barrage",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "DESCARGA DE NAPALM ORBITAL", "en": "ORBITAL NAPALM BARRAGE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/9/9a/Orbital_Napalm_Barrage_Icon.png/revision/latest?cb=20250218193004",
+    "combo": ["right", "right", "down", "left", "right", "up"]
+  },
+  {
+    "id": "orbital-120mm-he-barrage",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "DESCARGA AE DE 120 MM ORBITAL", "en": "ORBITAL 120 MM HE BARRAGE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/6/60/Orbital_120MM_HE_Barrage_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["right", "right", "down", "left", "right", "down"]
+  },
+  {
+    "id": "orbital-walking-barrage",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "DESCARGA DE CAMINANTE ORBITAL", "en": "ORBITAL WALKING BARRAGE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/8/8b/Orbital_Walking_Barrage_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["right", "down", "right", "down", "right", "down"]
+  },
+  {
+    "id": "orbital-380mm-he-barrage",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "DESCARGA AE DE 380 MM ORBITAL", "en": "ORBITAL 380 MM HE BARRAGE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/f/f4/Orbital_380MM_HE_Barrage_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["right", "down", "up", "up", "left", "down", "down"]
+  },
+  {
+    "id": "orbital-railcannon-strike",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "ATAQUE CON CAÑÓN DE RIEL ORBITAL", "en": "ORBITAL RAILCANNON STRIKE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/a/a5/Orbital_Railcannon_Strike_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["right", "up", "down", "down", "right"]
+  },
+  {
+    "id": "orbital-laser",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "LÁSER ORBITAL", "en": "ORBITAL LASER" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/8/84/Orbital_Laser_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["right", "down", "up", "right", "down"]
+  },
+  {
+    "id": "orbital-ems-strike",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "ATAQUE DE OEM ORBITAL", "en": "ORBITAL EMS STRIKE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/d/d7/Orbital_EMS_Strike_Icon.png/revision/latest?cb=20240501071501",
+    "combo": ["right", "right", "left", "down"]
+  },
+  {
+    "id": "orbital-gas-strike",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "ATAQUE DE GAS ORBITAL", "en": "ORBITAL GAS STRIKE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/5/57/Orbital_Gas_Strike_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["right", "right", "down", "right"]
+  },
+  {
+    "id": "orbital-smoke-strike",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "ATAQUE DE HUMO ORBITAL", "en": "ORBITAL SMOKE STRIKE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/e/e8/Orbital_Smoke_Strike_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["right", "right", "down", "up"]
+  },
+  {
+    "id": "eagle-500kg-bomb",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "BOMBA DE 500 KG DE ÁGUILA", "en": "EAGLE 500 KG BOMB" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/e/e9/Eagle_500kg_Bomb_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["up", "right", "down", "down", "down"]
+  },
+  {
+    "id": "eagle-strafing-run",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "BARRIDA DE AMETRALLADORA DE ÁGUILA", "en": "EAGLE STRAFING RUN" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/3/33/Eagle_Strafing_Run_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["up", "right", "right"]
+  },
+  {
+    "id": "eagle-110mm-rocket-pods",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "CÁPSULAS DE COHETES DE 110 MM DE ÁGUILA", "en": "EAGLE 110 MM ROCKET PODS" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/e/e3/Eagle_110MM_Rocket_Pods_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["up", "right", "up", "left"]
+  },
+  {
+    "id": "eagle-airstrike",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "ATAQUE AÉREO DE ÁGUILA", "en": "EAGLE AIRSTRIKE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/7/7e/Eagle_Airstrike_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["up", "right", "down", "right"]
+  },
+  {
+    "id": "eagle-cluster-bomb",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "BOMBA DE RACIMO DE ÁGUILA", "en": "EAGLE CLUSTER BOMB" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/8/89/Eagle_Cluster_Bomb_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["up", "right", "down", "down", "right"]
+  },
+  {
+    "id": "eagle-napalm-strike",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "ATAQUE AÉREO DE NAPALM DE ÁGUILA", "en": "EAGLE NAPALM AIRSTRIKE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/d/d4/Eagle_Napalm_Airstrike_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["up", "right", "down", "up"]
+  },
+  {
+    "id": "eagle-smoke-strike",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "ATAQUE DE HUMO DE ÁGUILA", "en": "EAGLE SMOKE STRIKE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/1/1a/Eagle_Smoke_Strike_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["up", "right", "up", "down"]
+  },
+  {
+    "id": "one-true-flag",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "LA ÚNICA BANDERA", "en": "ONE TRUE FLAG" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/f/fa/One_True_Flag_Icon.png/revision/latest?cb=20250518145544",
+    "combo": ["down", "left", "right", "right", "up"]
   }
 ]
