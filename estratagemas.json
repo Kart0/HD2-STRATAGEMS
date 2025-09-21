@@ -277,6 +277,132 @@
     "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
     "name": { "es": "LANZALLAMAS", "en": "FLAMETHROWER" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/5/50/Flamethrower_Icon.png/revision/latest?cb=20240501071503",
-    "combo": ["down","left","up","down","up"]
+    "combo": ["down", "left", "up", "down", "up"]
+  },
+  {
+    "id": "laser-cannon",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "CAÑÓN LÁSER", "en": "LASER CANNON" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/8/84/Laser_Cannon_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "left", "down", "up", "left"]
+  },
+  {
+    "id": "quasar-cannon",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "CAÑÓN QUÁSAR", "en": "QUASAR CANNON" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/6/6f/Quasar_Cannon_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "down", "up", "left", "right"]
+  },
+  {
+    "id": "arc-thrower",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "LANZAARCOS", "en": "ARC THROWER" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/0/04/Arc_Thrower_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["down", "right", "down", "up", "left", "left"]
+  },
+  {
+    "id": "commando",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "COMANDO", "en": "COMMANDO" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/9/92/Commando_Icon.png/revision/latest?cb=20250218191729",
+    "combo": ["down", "left", "up", "down", "right"]
+  },
+  {
+    "id": "expendable-antitank",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "ANTITANQUE DESECHABLE", "en": "EXPENDABLE ANTI-TANK" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/6/66/Expendable_Anti-Tank_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "down", "left", "up", "right"]
+  },
+  {
+    "id": "autocannon",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "CAÑÓN AUTOMÁTICO", "en": "AUTOCANNON" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/7/76/Autocannon_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "left", "down", "up", "up", "right"]
+  },
+  {
+    "id": "airburst-rocket-launcher",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "LANZACOHETES DE ESTALLIDO AÉREO", "en": "AIRBURST ROCKET LAUNCHER" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/2/2f/Airburst_Rocket_Launcher_Icon.png/revision/latest?cb=20240501084709",
+    "combo": ["down", "up", "up", "left", "right"]
+  },
+  {
+    "id": "spear-launcher",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "LANZA", "en": "SPEAR LAUNCHER" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/2/26/Spear_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["down", "down", "up", "down", "down"]
+  },
+  {
+    "id": "wasp-launcher",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "LANZAMISILES W.A.S.P.", "en": "W.A.S.P. LAUNCHER" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/6/6e/StA-X3_W.A.S.P._Launcher_Icon.png/revision/latest?cb=20250218193649",
+    "combo": ["down", "down", "up", "down", "right"]
+  },
+  {
+    "id": "recoilless-rifle",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "RIFLE SIN RETROCESO", "en": "RECOILLESS RIFLE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/0/03/Recoilless_Rifle_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["down", "left", "right", "right", "left"]
+  },
+  {
+    "id": "supply-pack",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "MOCHILA DE ABASTECIMIENTO", "en": "SUPPLY PACK" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/a/aa/Supply_Pack_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "left", "down", "up", "up", "down"]
+  },
+  {
+    "id": "portable-hellbomb",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "BOMBA HELL PORTÁTIL", "en": "PORTABLE HELLBOMB" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/8/8e/Portable_Hellbomb_Icon.png/revision/latest?cb=20250218193102",
+    "combo": ["down","right","up","up","up"]
+  },
+  {
+    "id": "hover-pack",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "MOCHILA DE VUELO", "en": "HOVER PACK" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/5/5c/Hover_Pack_Icon.png/revision/latest?cb=20250321210617",
+    "combo": ["down", "up", "up", "down", "left", "right"]
+  },
+  {
+    "id": "jump-pack",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "MOCHILA DE SALTO", "en": "JUMP PACK" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/6/66/Jump_Pack_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["down", "up", "up", "down", "up"]
+  },
+  {
+    "id": "shield-generator-pack",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "MOCHILA GENERADORA DE ESCUDO", "en": "SHIELD GENERATOR PACK" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/7/75/Shield_Generator_Pack_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "up", "left", "right", "left", "right"]
+  },
+  {
+    "id": "directional-shield-backpack",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "ESCUDO DIRECCIONAL", "en": "DIRECTIONAL SHIELD BACKPACK" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/5/5f/Directional_Shield_Icon.png/revision/latest?cb=20250218192128",
+    "combo": ["down", "up", "left", "right", "up", "up"]
+  },
+  {
+    "id": "ballisic-shield-backpack",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "MOCHILA DE ESCUDO BALÍSTICO", "en": "BALLISTIC SHIELD BACKPACK" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/2/27/Ballistic_Shield_Backpack_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["down", "left", "down", "down", "up", "left"]
+  },
+  {
+    "id": "guarddog-k9",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": ""PERRO GUARDIÁN" K-9", "en": ""GUARD DOG" K-9" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/1/1e/%22Guard_Dog%22_K-9_Icon.png/revision/latest?cb=20250626162105",
+    "combo": ["down", "up", "left", "up", "right", "left"]
   }
 ]
