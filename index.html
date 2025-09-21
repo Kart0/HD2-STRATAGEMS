@@ -6,8 +6,19 @@
 <title>Helldivers 2 - Estratagemas Aleatorias</title>
 <style>
   body{margin:0;font-family:Arial, sans-serif;background:#111;color:#fff;}
-  header{background:#222;padding:10px;text-align:right;display:flex;justify-content:space-between;align-items:center;}
-  #toggleMenu{background:#444;color:#fff;border:none;padding:10px 20px;font-size:1.1em;cursor:pointer;border-radius:8px;}
+  header{background:#222;padding:10px;display:flex;justify-content:space-between;align-items:center;position:relative;}
+  #toggleMenu{background:#444;color:#fff;border:none;width: 44px;height: 44px;font-size:1.3em;cursor:pointer;border-radius:8px;display: flex;align-items: center;justify-content: center;}
+  
+  /* Título centrado */
+  .page-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
   
   /* Botón de aleatorizar */
   #randomButton {
@@ -36,10 +47,17 @@
   #menu.hide{transform:translateX(-100%);}
   .menu-header{display:flex;justify-content:space-between;align-items:center;}
 
-  /* Botones cuadrados en el header del menú */
+  /* Botones cuadrados en el header del menú - reorganizados en 2 filas */
   .menu-buttons {
     display: flex;
+    flex-direction: column;
     gap: 10px;
+  }
+  
+  .menu-buttons-row {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
   }
   
   .square-btn {
@@ -114,6 +132,38 @@
 
   /* Media queries para MÓVIL */
   @media (max-width: 768px) {
+    header {
+      display: grid;
+      grid-template-columns: 44px 1fr 44px;
+      grid-template-areas: "random title menu";
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+    }
+    
+    #randomButton {
+      grid-area: random;
+      margin-right: 0;
+    }
+    
+    .page-title {
+      grid-area: title;
+      position: static;
+      transform: none;
+      font-size: 1em;
+	  font-weight: bold;
+      margin: 0;
+      text-align: center;
+      display: block !important;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    #toggleMenu {
+      grid-area: menu;
+    }
+    
     #seleccionadas {
       grid-template-columns: repeat(1, 1fr);
       gap: 15px;
@@ -162,7 +212,8 @@
 <body>
 <header>
   <button id="randomButton" title="Mostrar 4 estratagemas aleatorias de las seleccionadas" aria-label="Mostrar 4 estratagemas aleatorias">🔄</button>
-  <button id="toggleMenu">☰ Estratagemas</button>
+  <div class="page-title" id="pageTitle">RULETA DE LIBERTAD</div>
+  <button id="toggleMenu" title="Abrir menú de estratagemas">☰</button>
 </header>
 
 <!-- Modal idioma -->
@@ -181,10 +232,14 @@
   <div class="menu-header">
     <h1 id="menuTitle">Selecciona Estratagemas</h1>
     <div class="menu-buttons">
-      <button class="square-btn" id="selectAllButton" title="Seleccionar todas las estratagemas">✅</button>
-      <button class="square-btn" id="randomMenuButton" title="Mostrar 4 aleatorias de las seleccionadas">🔄</button>
-      <button class="square-btn" id="closeMenu">☰</button>
-      <button class="square-btn" id="reopenLang">🌐</button>
+      <div class="menu-buttons-row">
+        <button class="square-btn" id="closeMenu" title="Cerrar menú">☰</button>
+        <button class="square-btn" id="reopenLang" title="Cambiar idioma">🌐</button>
+      </div>
+      <div class="menu-buttons-row">
+        <button class="square-btn" id="selectAllButton" title="Seleccionar todas las estratagemas">✅</button>
+        <button class="square-btn" id="randomMenuButton" title="Mostrar 4 aleatorias de las seleccionadas">🔄</button>
+      </div>
     </div>
   </div>
   <div id="categorias"></div>
@@ -220,6 +275,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   const randomButton = document.getElementById('randomButton');
   const selectAllButton = document.getElementById('selectAllButton');
   const randomMenuButton = document.getElementById('randomMenuButton');
+  const pageTitle = document.getElementById('pageTitle'); // Título de la página
 
   // listeners del modal (seguro)
   btnEn.addEventListener('click', ()=> chooseLang('en'));
@@ -244,8 +300,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     currentLang = lang;
     langModal.style.display = 'none';
     
-    // Actualizar texto del botón de menú
-    updateMenuButtonText();
+    // Actualizar título de la página
+    updatePageTitle();
     
     // actualiza textos si ya hay menu; si no, renderMenu() lo hará tras cargar datos
     if(estratagemas.length) renderMenu();
@@ -253,9 +309,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     console.log('Idioma cambiado a', currentLang);
   }
 
-  // Actualizar texto del botón de menú según idioma
-  function updateMenuButtonText() {
-    toggleMenu.textContent = '☰ ' + (currentLang === 'en' ? 'Stratagems' : 'Estratagemas');
+  // Actualizar título de la página según idioma
+  function updatePageTitle() {
+    pageTitle.textContent = currentLang === 'en' ? 'FREEDOM ROULETTE' : 'RULETA DE LIBERTAD';
   }
 
   // Mostrar 4 estratagemas aleatorias de las seleccionadas
@@ -268,7 +324,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       return;
     }
     
-    // Convertir Set a Array
+    // Convertir Set to Array
     const idsArray = Array.from(seleccionadasIds);
     
     // Si hay menos de 4 seleccionadas, usar todas
@@ -293,6 +349,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
     
     updateGridColumns();
+	// Cerrar el menú después de aleatorizar
+	menu.classList.add('hide');
   }
 
   // Alternar entre seleccionar todas y deseleccionar todas
