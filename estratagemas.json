@@ -143,7 +143,7 @@
     "id": "orbital-ems-strike",
     "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
     "name": { "es": "ATAQUE DE OEM ORBITAL", "en": "ORBITAL EMS STRIKE" },
-    "image": "https://imgur.com/qBfHmtu",
+    "image": "https://i.imgur.com/qBfHmtu.png",
     "combo": ["right", "right", "left", "down"]
   },
   {
@@ -443,7 +443,7 @@
   {
     "id": "patriot-exosuit",
     "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
-    "name": { "es": "EXOTRAJE PATRIOTA", "en": "PATRIOR EXOSUIT" },
+    "name": { "es": "EXOTRAJE PATRIOTA", "en": "PATRIOT EXOSUIT" },
     "image": "https://i.imgur.com/4MmY2yF.png",
     "combo": ["left", "down", "right", "up", "left", "down", "down"]
   },
@@ -553,6 +553,7 @@
     "combo": ["down", "left", "left", "down"]
   }
 ]
+
 
 
 
