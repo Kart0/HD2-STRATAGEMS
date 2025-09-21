@@ -444,7 +444,7 @@
     "id": "patriot-exosuit",
     "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
     "name": { "es": "EXOTRAJE PATRIOTA", "en": "PATRIOR EXOSUIT" },
-    "image": "httpshttps://i.imgur.com/4MmY2yF.png",
+    "image": "https://i.imgur.com/4MmY2yF.png",
     "combo": ["left", "down", "right", "up", "left", "down", "down"]
   },
   {
@@ -553,6 +553,7 @@
     "combo": ["down", "left", "left", "down"]
   }
 ]
+
 
 
 
