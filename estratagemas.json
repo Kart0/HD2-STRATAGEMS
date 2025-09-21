@@ -1,0 +1,16 @@
+[
+  {
+    "id": "reinforce",
+	"category": { "es": "MISIÓN", "en": "MISSION" },
+    "name": { "es": "REFUERZO", "en": "REINFORCE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/5/58/Reinforce_Icon.png/revision/latest?cb=20250218193250",
+    "combo": ["up", "down", "right", "left", "up"]
+  },
+  {
+    "id": "sos beacon",
+	"category": { "es": "MISIÓN", "en": "MISSION" },
+    "name": { "es": "SOS BEACON", "en": "BALIZA SOS" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/1/19/SOS_Beacon_Icon.png/revision/latest?cb=20250218193444",
+    "combo": ["up", "down", "right", "up"]
+  }
+]
