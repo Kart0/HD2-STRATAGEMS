@@ -40,7 +40,24 @@
   #categorias::after {
     content: "";
     display: block;
-    height: 60px;   /* agrega 60px de “aire” después de la última categoría */
+    height: 60px;   /* agrega 60px de "aire" después de la última categoría */
+  }
+  
+  /* Indicador de carga */
+  .loading {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+  /* Imagen de respaldo */
+  .fallback-img {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    font-size: 10px;
+    text-align: center;
   }
 </style>
 </head>
@@ -57,6 +74,7 @@
       <button data-lang="en" id="btnEn">🇺🇸 English</button>
       <button data-lang="es" id="btnEs">🇪🇸 Español</button>
     </div>
+    <p class="note">Nota: Si las imágenes no se cargan, recarga la página después de seleccionar idioma</p>
   </div>
 </div>
 
@@ -117,6 +135,22 @@ document.addEventListener('DOMContentLoaded', ()=>{
     console.log('Idioma cambiado a', currentLang);
   }
 
+  // Función para forzar HTTPS en las URLs de imágenes
+  function ensureHttps(url) {
+    if (url.startsWith('http://')) {
+      return url.replace('http://', 'https://');
+    }
+    return url;
+  }
+
+  // Función para manejar errores de carga de imágenes
+  function handleImageError(img, item) {
+    console.warn('Error cargando imagen:', img.src);
+    img.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"><rect width="70" height="70" fill="%23333"/><text x="35" y="35" font-family="Arial" font-size="10" fill="%23666" text-anchor="middle" dominant-baseline="middle">' + 
+              (item.name[currentLang] || item.name.en || item.name.es || '') + '</text></svg>';
+    img.classList.add('fallback-img');
+  }
+
   // Cargar JSON (puedes cambiar a tu URL raw de GitHub)
   async function cargarEstratagemas() {
     try {
@@ -125,12 +159,21 @@ document.addEventListener('DOMContentLoaded', ()=>{
       const res = await fetch(url);
       if(!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
       estratagemas = await res.json();
+      
+      // Forzar HTTPS en todas las URLs de imágenes
+      estratagemas = estratagemas.map(item => {
+        return {
+          ...item,
+          image: ensureHttps(item.image)
+        };
+      });
+      
       console.log('Estratagemas cargadas:', estratagemas.length);
       renderMenu();
     } catch (err) {
       console.error('Error cargando estratagemas.json:', err);
-      // deja modal abierto para que el usuario pueda elegir Continuar
-      // si prefieres auto-cerrar, podrías cerrar aquí
+      // Mostrar mensaje de error al usuario
+      categoriasDiv.innerHTML = '<p style="color: #f55; text-align: center;">Error cargando los datos. Por favor, recarga la página.</p>';
     }
   }
 
@@ -193,6 +236,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
         img.className = 'icon';
         img.src = it.image;
         img.alt = it.name[currentLang] || it.name.en || it.name.es || '';
+        img.onerror = () => handleImageError(img, it);
+
         box.appendChild(img);
 
         // al click añadimos/removemos tarjeta por id
@@ -244,14 +289,23 @@ document.addEventListener('DOMContentLoaded', ()=>{
     icon.src = item.image;
     icon.width = 60; icon.height = 60;
     icon.alt = item.name[currentLang] || item.name.en || item.name.es || '';
+    icon.onerror = () => {
+      icon.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><rect width="60" height="60" fill="%23333"/><text x="30" y="30" font-family="Arial" font-size="8" fill="%23666" text-anchor="middle" dominant-baseline="middle">' + 
+                (item.name[currentLang] || item.name.en || item.name.es || '') + '</text></svg>';
+      icon.classList.add('fallback-img');
+    };
 
     const arrows = document.createElement('div');
     (item.combo || []).forEach(dir=>{
       const a = document.createElement('img');
       a.className = 'arrow';
       const src = arrowImgs[dir] || arrowImgs[dir.toLowerCase()] || '';
-      a.src = src;
+      a.src = ensureHttps(src);
       a.alt = dir;
+      a.onerror = () => {
+        a.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><rect width="36" height="36" fill="%23333"/><text x="18" y="18" font-family="Arial" font-size="10" fill="%23666" text-anchor="middle" dominant-baseline="middle">' + 
+                dir.charAt(0).toUpperCase() + '</text></svg>';
+      };
       arrows.appendChild(a);
     });
 
