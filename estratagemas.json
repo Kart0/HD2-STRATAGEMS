@@ -2,85 +2,92 @@
   {
     "id": "reinforce",
     "category": { "es": "MISIÓN", "en": "MISSION" },
-    "name": { "es": "Refuerzo", "en": "Reinforce" },
+    "name": { "es": "REFUERZO", "en": "REINFORCE" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/5/58/Reinforce_Icon.png/revision/latest?cb=20250218193250",
     "combo": ["up", "down", "right", "left", "up"]
   },
   {
     "id": "sos-beacon",
     "category": { "es": "MISIÓN", "en": "MISSION" },
-    "name": { "es": "Baliza SOS", "en": "SOS Beacon" },
+    "name": { "es": "BALIZA SOS", "en": "SOS BEACON" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/1/19/SOS_Beacon_Icon.png/revision/latest?cb=20250218193444",
     "combo": ["up", "down", "right", "up"]
   },
   {
     "id": "resupply",
     "category": { "es": "MISIÓN", "en": "MISSION" },
-    "name": { "es": "Reabastecimiento", "en": "Resupply" },
+    "name": { "es": "REABASTECIMIENTO", "en": "RESUPPLY" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/7/7b/Resupply_Icon.png/revision/latest?cb=20250218193320",
     "combo": ["down", "down", "up", "right"]
   },
   {
     "id": "hellbomb",
     "category": { "es": "MISIÓN", "en": "MISSION" },
-    "name": { "es": "Bomba Hell", "en": "Hellbomb" },
+    "name": { "es": "BOMBA HELL", "en": "HELLBOMB" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/1/12/Hellbomb_Icon.png/revision/latest?cb=20250218192807",
     "combo": ["down", "up", "left", "down", "up", "right", "down", "up"]
   },
   {
     "id": "sssd-delivery",
     "category": { "es": "MISIÓN", "en": "MISSION" },
-    "name": { "es": "Entrega SSSD", "en": "SSSD Delivery" },
+    "name": { "es": "ENTREGA SSSD", "en": "SSSD DELIVERY" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/e/ef/SSSD_Delivery_Icon.png/revision/latest?cb=20250218214623",
     "combo": ["down", "down", "down", "up", "up"]
   },
   {
     "id": "seismic-probe",
     "category": { "es": "MISIÓN", "en": "MISSION" },
-    "name": { "es": "Sonda Sísmica", "en": "Seismic Probe" },
+    "name": { "es": "SONDA SISMICA", "en": "SEISMIC PROBE" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/c/c8/Seismic_Probe_Icon.png/revision/latest?cb=20250218193400",
     "combo": ["up", "up", "left", "right", "down", "down"]
   },
   {
     "id": "upload-data",
     "category": { "es": "MISIÓN", "en": "MISSION" },
-    "name": { "es": "Subir Datos", "en": "Upload Data" },
+    "name": { "es": "SUBIR DATOS", "en": "UPLOAD DATA" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/6/62/Upload_Data_Icon.png/revision/latest?cb=20250218193537",
     "combo": ["left", "right", "up", "up", "up"]
   },
   {
     "id": "eagle-rearm",
     "category": { "es": "MISIÓN", "en": "MISSION" },
-    "name": { "es": "Recarga de Águila", "en": "Eagle Rearm" },
+    "name": { "es": "RECARGA DE ÁGUILA", "en": "EAGLE REARM" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/a/a6/Eagle_Rearm_Icon.png/revision/latest?cb=20240501165936",
     "combo": ["up", "up", "left", "up", "right"]
   },
   {
     "id": "seaf-artillery",
     "category": { "es": "MISIÓN", "en": "MISSION" },
-    "name": { "es": "Artillería SEAF", "en": "SEAF Artillery" },
+    "name": { "es": "ARTILLERIA SEAF", "en": "SEAF ARTILLERY" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/6/6a/SEAF_Artillery_Icon.png/revision/latest?cb=20250328174732",
     "combo": ["right", "up", "up", "down"]
   },
   {
     "id": "super-earth-flag",
     "category": { "es": "MISIÓN", "en": "MISSION" },
-    "name": { "es": "Bandera de la Supertierra", "en": "Super Earth Flag" },
+    "name": { "es": "BANDERA DE LA SUPERTIERRA", "en": "SUPER EARTH FLAG" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/7/73/Super_Earth_Flag_Icon.png/revision/latest?cb=20250218193903",
     "combo": ["down", "up", "down", "up"]
   },
   {
     "id": "hive-breaker-drill",
     "category": { "es": "MISIÓN", "en": "MISSION" },
-    "name": { "es": "Taladro Pesado", "en": "Hive Breaker Drill" },
+    "name": { "es": "TALADRO PESADO", "en": "HIVE BREAKER DRILL" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/3/37/Hive_Breaker_Drill_Icon.png/revision/latest?cb=20250218214658",
     "combo": ["left", "up", "down", "right", "down", "down"]
   },
   {
     "id": "orbital-precision-strike",
     "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
-    "name": { "es": "Ataque de Precisión Orbital", "en": "Orbital Precision Strike" },
+    "name": { "es": "ATAQUE DE PRECISIÓN ORBITAL", "en": "ORBITAL PRECISION STRIKE" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/4/47/Orbital_Precision_Strike_Icon.png/revision/latest?cb=20240501071502",
     "combo": ["right", "right", "up"]
+  },
+  {
+    "id": "orbital-gatling-barrage",
+    "category": { "es": "OFENSIVAS", "en": "OFFENSIVE" },
+    "name": { "es": "DESCARGA GATLING ORBITAL", "en": "ORBITAL GATLING BARRAGE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/4/47/Orbital_Precision_Strike_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["right", "down", "left", "up", "up"]
   }
 ]
