@@ -3,7 +3,7 @@
     "id": "reinforce",
     "category": { "es": "MISIÓN", "en": "MISSION" },
     "name": { "es": "REFUERZO", "en": "REINFORCE" },
-    "image": "https://github.com/Kart0/HD2-STRATAGEMS/blob/main/images/Reinforce_Icon.png",
+    "image": "https://raw.githubusercontent.com/Kart0/HD2-STRATAGEMS/refs/heads/main/images/Reinforce_Icon.png",
     "combo": ["up", "down", "right", "left", "up"]
   },
   {
@@ -553,4 +553,5 @@
     "combo": ["down", "left", "left", "down"]
   }
 ]
+
 
