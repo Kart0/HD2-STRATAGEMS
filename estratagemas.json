@@ -215,5 +215,68 @@
     "name": { "es": "LA ÚNICA BANDERA", "en": "ONE TRUE FLAG" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/f/fa/One_True_Flag_Icon.png/revision/latest?cb=20250518145544",
     "combo": ["down", "left", "right", "right", "up"]
+  },
+  {
+    "id": "machine-gun",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "AMETRALLADORA", "en": "MACHINE GUN" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/c/c2/Machine_Gun_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["down", "left", "down", "up", "right"]
+  },
+  {
+    "id": "stalwart",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "INCONDICIONAL", "en": "STALWART" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/2/2f/Stalwart_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "left", "down", "up", "up", "left"]
+  },
+  {
+    "id": "heavy-machine-gun",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "AMETRALLADORA PESADA", "en": "HEAVY MACHINE GUN" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/c/ce/Heavy_Machine_Gun_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["down", "left", "up", "down", "down"]
+  },
+  {
+    "id": "railgun",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "ARMA DE RIEL", "en": "RAILGUN" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/a/ae/Railgun_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "right", "down", "up", "left", "right"]
+  },
+  {
+    "id": "antimateriel-rifle",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "RIFLE ANTIEQUIPAMIENTO", "en": "ANTI-MATERIEL RIFLE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/a/a4/Anti-Materiel_Rifle_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "left", "right", "up", "down"]
+  },
+  {
+    "id": "grenade-launcher",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "LANZAGRANADAS", "en": "GRENADE LAUNCHER" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/7/78/Grenade_Launcher_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "left", "up", "left", "down"]
+  },
+  {
+    "id": "deescalator",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "DESESCALADOR", "en": "DE-ESCALATOR" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/8/8a/De-Escalator_Icon.png/revision/latest?cb=20250626162117",
+    "combo": ["down", "right", "up", "left", "right"]
+  },
+  {
+    "id": "sterilizer",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "ESTERILIZADOR", "en": "STERILIZER" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/3/3a/Sterilizer_Icon.png/revision/latest?cb=20250218193810",
+    "combo": ["down", "left", "up", "down", "left"]
+  },
+  {
+    "id": "flamethrower",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "LANZALLAMAS", "en": "FLAMETHROWER" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/5/50/Flamethrower_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["down","left","up","down","up"]
   }
 ]
