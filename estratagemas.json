@@ -401,8 +401,9 @@
   {
     "id": "guarddog-k9",
     "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
-    "name": { "es": "PERRO GUARDIÁN K-9", "en": "GUARD DOG K-9" },
+    "name": { "es": "'PERRO GUARDIÁN' K-9", "en": "'GUARD DOG' K-9" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/2/27/Ballistic_Shield_Backpack_Icon.png/revision/latest?cb=20240501071503",
     "combo": ["down", "up", "left", "up", "right", "left"]
   }
 ]
+
