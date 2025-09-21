@@ -404,5 +404,152 @@
     "name": { "es": "PERRO GUARDIÁN K-9", "en": "GUARD DOG K-9" },
     "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/1/1e/%22Guard_Dog%22_K-9_Icon.png/revision/latest?cb=20250626162105",
     "combo": ["down", "up", "left", "up", "right", "left"]
+  },
+  {
+    "id": "guarddog",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "PERRO GUARDIÁN", "en": "GUARD DOG" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/a/a6/%22Guard_Dog%22_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "up", "left", "up", "right", "down"]
+  },
+  {
+    "id": "guarddog-rover",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "ROVER PERRO GUARDIÁN", "en": "GUARD DOG ROVER" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/f/ff/%22Guard_Dog%22_Rover_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "up", "left", "up", "right", "right"]
+  },
+  {
+    "id": "guarddog-dog-breath",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "ALIENTO DE PERRO GUARDIÁN", "en": "GUARD DOG DOG BREATH" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/3/31/%27Guard_Dog%27_Dog_Breath_Icon.png/revision/latest?cb=20250218192628",
+    "combo": ["down", "up", "left", "up", "right", "up"]
+  },
+  {
+    "id": "fast-recon-vehicle",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "VEHÍCULO DE RECONOCIMIENTO RÁPIDO", "en": "FAST RECON VEHICLE" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/b/b9/Fast_Recon_Vehicle_Icon.png/revision/latest?cb=20250218192403",
+    "combo": ["left", "down", "right", "down", "right", "down", "up"]
+  },
+  {
+    "id": "emancipator-exosuit",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "EXOTRAJE EMANCIPADOR", "en": "EMANCIPATOR EXOSUIT" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/4/4d/Emancipator_Exosuit_Icon.png/revision/latest?cb=20240608182018",
+    "combo": ["left", "down", "right", "up", "left", "down", "up"]
+  },
+  {
+    "id": "patriot-exosuit",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "EXOTRAJE PATRIOTA", "en": "PATRIOR EXOSUIT" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/7/7c/Patriot_Exosuit_Icon.png/revision/latest?cb=20240501071537",
+    "combo": ["left", "down", "right", "up", "left", "down", "down"]
+  },
+  {
+    "id": "gatling-sentry",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "VIGÍA GATLING", "en": "GATLING SENTRY" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/8/8c/Gatling_Sentry_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["down", "up", "right", "left"]
+  },
+  {
+    "id": "machine-gun-sentry",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "VIGÍA AMETRALLADORA", "en": "MACHINE GUN SENTRY" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/8/82/Machine_Gun_Sentry_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down","up","right","right","up"]
+  },
+  {
+    "id": "flame-sentry",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "VIGÍA DE LLAMAS", "en": "FLAME SENTRY" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/7/7e/Flame_Sentry_Icon.png/revision/latest?cb=20250218192452",
+    "combo": ["down", "up", "right", "down", "up", "up"]
+  },
+  {
+    "id": "rocket-sentry",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "VIGÍA DE COHETES", "en": "ROCKET SENTRY" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/2/2c/Rocket_Sentry_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["down", "up", "right", "right", "left"]
+  },
+  {
+    "id": "autocannon-sentry",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "VIGÍA DE CAÑÓN AUTOMÁTICO", "en": "AUTOCANNON SENTRY" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/c/c0/Autocannon_Sentry_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "up", "right", "up", "left", "up"]
+  },
+  {
+    "id": "ems-mortar-sentry",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "VIGÍA MORTERO OEM", "en": "EMS MORTAR SENTRY" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/e/e5/EMS_Mortar_Sentry_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "up", "right", "down", "right"]
+  },
+  {
+    "id": "mortar-sentry",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "VIGÍA MORTERO", "en": "MORTAR SENTRY" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/8/85/Mortar_Sentry_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["down", "up", "right", "right", "down"]
+  },
+  {
+    "id": "shield-generator-relay",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "RELÉ GENERADOR DE ESCUDO", "en": "SHIELD GENERATOR RELAY" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/0/0d/Shield_Generator_Relay_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "down", "left", "right", "left", "right"]
+  },
+  {
+    "id": "grenadier-battlement",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "ALMENA DE GRANADERO", "en": "GRENADIER BATTLEMENT" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/b/b9/Grenadier_Battlement_Icon.png/revision/latest?cb=20250328174122",
+    "combo": ["down", "right", "down", "left", "right"]
+  },
+  {
+    "id": "antitank-emplacement",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "EMPLAZAMIENTO ANTITANQUE", "en": "ANTI-TANK EMPLACEMENT" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/4/45/Anti-Tank_Emplacement_Icon.png/revision/latest?cb=20250218191450",
+    "combo": ["down", "up", "left", "right", "right", "right"]
+  },
+  {
+    "id": "hmg-emplacement",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "EMPLAZAMIENTO DE HMG", "en": "HMG EMPLACEMENT" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/5/5f/HMG_Emplacement_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "up", "left", "right", "right", "left"]
+  },
+  {
+    "id": "tesla-tower",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "TORRE TESLA", "en": "TESLA TOWER" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/e/ea/Tesla_Tower_Icon.png/revision/latest?cb=20240501071502",
+    "combo": ["down", "up", "right", "up", "left", "right"]
+  },
+  {
+    "id": "antitank-mines",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "MINAS ANTITANQUE", "en": "ANTI-TANK MINES" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/5/55/Anti-Tank_Mines_Icon.png/revision/latest?cb=20250218191647",
+    "combo": ["down", "left", "up", "up"]
+  },
+  {
+    "id": "gas-mines",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "MINAS DE GAS", "en": "GAS MINES" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/a/a4/Gas_Mines_Icon.png/revision/latest?cb=20250218192546",
+    "combo": ["down", "left", "left", "right"]
+  },
+  {
+    "id": "incendiary-mines",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "MINAS INCENDIARIAS", "en": "INCENDIARY MINES" },
+    "image": "https://static.wikia.nocookie.net/helldivers_gamepedia/images/4/4d/Incendiary_Mines_Icon.png/revision/latest?cb=20240501071503",
+    "combo": ["down", "left", "left", "down"]
   }
 ]
