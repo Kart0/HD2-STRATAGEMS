@@ -3,7 +3,7 @@
     "id": "reinforce",
     "category": { "es": "MISIÓN", "en": "MISSION" },
     "name": { "es": "REFUERZO", "en": "REINFORCE" },
-    "image": "https://i.imgur.com/wTZuMIR_d.webp?maxwidth=760&fidelity=grand",
+    "image": "https://i.imgur.com/IJvAsCu.png",
     "combo": ["up", "down", "right", "left", "up"]
   },
   {
@@ -553,6 +553,7 @@
     "combo": ["down", "left", "left", "down"]
   }
 ]
+
 
 
 
