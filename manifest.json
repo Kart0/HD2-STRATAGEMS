@@ -1,10 +1,11 @@
 {
-  "name": "Helldivers 2 Tools",
-  "short_name": "HD2 Tools",
-  "start_url": "./index.html",
+  "name": "Stratagem Kit - Helldivers 2",
+  "short_name": "Stratagem Kit",
+  "description": "Herramientas esenciales para Helldivers 2",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#000000",
   "theme_color": "#000000",
+  "background_color": "#000000",
   "icons": [
     {
       "src": "icon-192.png",

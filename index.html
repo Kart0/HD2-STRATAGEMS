@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Selector de Herramientas Helldivers 2</title>
+    <title>Stratagem Kit - Helldivers 2</title>
 
-    <!-- Color de barra superior en iOS/Android -->
+    <!-- PWA / iOS -->
     <meta name="theme-color" content="#000000">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="HD2 Tools">
-
+    <meta name="apple-mobile-web-app-title" content="Stratagem Kit">
+    
     <!-- Icono para iOS -->
     <link rel="apple-touch-icon" href="icon-180.png">
-
-    <!-- Manifest PWA -->
     <link rel="manifest" href="manifest.json">
 
     <style>
@@ -25,13 +23,11 @@
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
-
         html, body {
             height: 100%;
-            overflow: hidden; /* evita scroll/zoom accidental */
+            overflow: hidden;
             background: #000;
         }
-
         body {
             background: linear-gradient(135deg, #2c2c2c, #000000, #2c2c2c);
             min-height: 100vh;
@@ -40,7 +36,6 @@
             align-items: center;
             padding: 20px;
         }
-
         .container {
             background: rgba(40, 40, 40, 0.7);
             backdrop-filter: blur(10px);
@@ -52,7 +47,6 @@
             width: 100%;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-
         h1 {
             color: white;
             margin-bottom: 30px;
@@ -63,17 +57,12 @@
             align-items: center;
             gap: 15px;
         }
-
-        h1 img {
-            height: 50px;
-        }
-
+        h1 img { height: 50px; }
         .options {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-
         .option-btn {
             background: rgba(60, 60, 60, 0.7);
             border: none;
@@ -91,33 +80,22 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             text-align: center;
         }
-
         .option-btn:hover {
             background: #9C7D2D;
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(156, 125, 45, 0.4);
         }
-
-        .option-btn:active {
-            transform: translateY(0);
-        }
-
-        .icon {
-            font-size: 2rem;
-            flex-shrink: 0;
-        }
-
+        .option-btn:active { transform: translateY(0); }
+        .icon { font-size: 2rem; flex-shrink: 0; }
         .btn-text {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-
         .english-text {
             font-weight: bold;
             font-size: 1.2rem;
         }
-
         @media (max-width: 600px) {
             .container { padding: 30px 20px; }
             h1 { font-size: 1.8rem; }
@@ -136,8 +114,8 @@
         </h1>
 
         <div class="options">
-            <!-- Stratagem List -->
-            <button class="option-btn" onclick="window.location.href='https://kart0.github.io/hd2-stratagems-list/'">
+            <!-- ✅ CAMBIADO: Apuntar directamente a index.html -->
+            <button class="option-btn" onclick="window.location.href='stratagems-list/index.html'">
                 <span class="icon">📝</span>
                 <div class="btn-text">
                     <span class="english-text">STRATAGEM LIST</span>
@@ -145,8 +123,7 @@
                 </div>
             </button>
 
-            <!-- Stratagem Randomizer -->
-            <button class="option-btn" onclick="window.location.href='https://kart0.github.io/hd2-stratagems-randomizer/'">
+            <button class="option-btn" onclick="window.location.href='stratagems-randomizer/index.html'">
                 <span class="icon">🔄</span>
                 <div class="btn-text">
                     <span class="english-text">STRATAGEM RANDOMIZER</span>
@@ -154,8 +131,7 @@
                 </div>
             </button>
 
-            <!-- PAD -->
-            <button class="option-btn" onclick="window.location.href='https://kart0.github.io/hd2-stratagems-pad/'">
+            <button class="option-btn" onclick="window.location.href='stratagems-pad/index.html'">
                 <div class="btn-text">
                     <span class="english-text">PAD</span>
                 </div>
@@ -164,7 +140,7 @@
         </div>
     </div>
 
-    <!-- Service Worker para PWA (opcional, pero recomendable) -->
+    <!-- Service Worker para PWA -->
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js').catch(err => console.log('SW fail', err));
