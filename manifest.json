@@ -2,18 +2,19 @@
   "name": "Stratagem Kit - Helldivers 2",
   "short_name": "Stratagem Kit",
   "description": "Herramientas esenciales para Helldivers 2",
-  "start_url": "/",
-  "display": "standalone",
+  "start_url": "/HD2-STRATAGEMS/",
+  "scope": "/HD2-STRATAGEMS/",
+  "display": "standalone", 
   "theme_color": "#000000",
   "background_color": "#000000",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "/HD2-STRATAGEMS/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icon-512.png",
+      "src": "/HD2-STRATAGEMS/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
