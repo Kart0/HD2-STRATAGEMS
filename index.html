@@ -2,8 +2,22 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Selector de Herramientas Helldivers 2</title>
+
+    <!-- Color de barra superior en iOS/Android -->
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="HD2 Tools">
+
+    <!-- Icono para iOS -->
+    <link rel="apple-touch-icon" href="icon-180.png">
+
+    <!-- Manifest PWA -->
+    <link rel="manifest" href="manifest.json">
+
     <style>
         * {
             margin: 0;
@@ -11,7 +25,13 @@
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
-        
+
+        html, body {
+            height: 100%;
+            overflow: hidden; /* evita scroll/zoom accidental */
+            background: #000;
+        }
+
         body {
             background: linear-gradient(135deg, #2c2c2c, #000000, #2c2c2c);
             min-height: 100vh;
@@ -20,7 +40,7 @@
             align-items: center;
             padding: 20px;
         }
-        
+
         .container {
             background: rgba(40, 40, 40, 0.7);
             backdrop-filter: blur(10px);
@@ -32,7 +52,7 @@
             width: 100%;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
+
         h1 {
             color: white;
             margin-bottom: 30px;
@@ -47,13 +67,13 @@
         h1 img {
             height: 50px;
         }
-        
+
         .options {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-        
+
         .option-btn {
             background: rgba(60, 60, 60, 0.7);
             border: none;
@@ -65,66 +85,45 @@
             cursor: pointer;
             transition: all 0.3s ease;
             display: flex;
-            flex-direction: column; /* elementos en columna */
-            align-items: center;    
+            flex-direction: column;
+            align-items: center;
             gap: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             text-align: center;
         }
-        
+
         .option-btn:hover {
             background: #9C7D2D;
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(156, 125, 45, 0.4);
         }
-        
+
         .option-btn:active {
             transform: translateY(0);
         }
-        
+
         .icon {
             font-size: 2rem;
             flex-shrink: 0;
         }
-        
+
         .btn-text {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        
+
         .english-text {
             font-weight: bold;
             font-size: 1.2rem;
         }
-        
-        .spanish-text {
-            font-size: 0.9rem;
-            opacity: 0.9;
-            margin-top: 4px;
-        }
-        
+
         @media (max-width: 600px) {
-            .container {
-                padding: 30px 20px;
-            }
-            
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            .option-btn {
-                padding: 15px 20px;
-                font-size: 1rem;
-            }
-            
-            .icon {
-                font-size: 1.8rem;
-            }
-            
-            .english-text {
-                font-size: 1.1rem;
-            }
+            .container { padding: 30px 20px; }
+            h1 { font-size: 1.8rem; }
+            .option-btn { padding: 15px 20px; font-size: 1rem; }
+            .icon { font-size: 1.8rem; }
+            .english-text { font-size: 1.1rem; }
         }
     </style>
 </head>
@@ -132,10 +131,12 @@
     <div class="container">
         <h1>
             🛠️
-            <img src="https://imgur.com/ZOTlNtx.png" alt="HD2 Logo">
+            <img src="https://i.imgur.com/f0pKLzX.png" alt="HD2 Logo">
             🛠️
         </h1>
+
         <div class="options">
+            <!-- Stratagem List -->
             <button class="option-btn" onclick="window.location.href='https://kart0.github.io/hd2-stratagems-list/'">
                 <span class="icon">📝</span>
                 <div class="btn-text">
@@ -143,6 +144,8 @@
                     <span class="spanish-text">LISTA DE ESTRATAGEMAS</span>
                 </div>
             </button>
+
+            <!-- Stratagem Randomizer -->
             <button class="option-btn" onclick="window.location.href='https://kart0.github.io/hd2-stratagems-randomizer/'">
                 <span class="icon">🔄</span>
                 <div class="btn-text">
@@ -150,7 +153,8 @@
                     <span class="spanish-text">ALEATORIZADOR DE ESTRATAGEMAS</span>
                 </div>
             </button>
-            <!-- BOTÓN PAD con texto arriba y flechas debajo -->
+
+            <!-- PAD -->
             <button class="option-btn" onclick="window.location.href='https://kart0.github.io/hd2-stratagems-pad/'">
                 <div class="btn-text">
                     <span class="english-text">PAD</span>
@@ -159,5 +163,12 @@
             </button>
         </div>
     </div>
+
+    <!-- Service Worker para PWA (opcional, pero recomendable) -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(err => console.log('SW fail', err));
+        }
+    </script>
 </body>
 </html>
