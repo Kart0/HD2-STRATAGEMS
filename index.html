@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Stratagem Kit - Helldivers 2</title>
+
+    <!-- PWA / iOS -->
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Stratagem Kit">
+    
+    <!-- Icono para iOS -->
+    <link rel="apple-touch-icon" href="icon-180.png">
+    <link rel="manifest" href="manifest.json">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        html, body {
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+        body {
+            background: linear-gradient(135deg, #2c2c2c, #000000, #2c2c2c);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(40, 40, 40, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            color: white;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        h1 img { height: 50px; }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .option-btn {
+            background: rgba(60, 60, 60, 0.7);
+            border: none;
+            border-radius: 12px;
+            padding: 20px 25px;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .option-btn:hover {
+            background: #9C7D2D;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(156, 125, 45, 0.4);
+        }
+        .option-btn:active { transform: translateY(0); }
+        .icon { font-size: 2rem; flex-shrink: 0; }
+        .btn-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .english-text {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 30px 20px; }
+            h1 { font-size: 1.8rem; }
+            .option-btn { padding: 15px 20px; font-size: 1rem; }
+            .icon { font-size: 1.8rem; }
+            .english-text { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            🛠️
+            <img src="https://i.imgur.com/f0pKLzX.png" alt="HD2 Logo">
+            🛠️
+        </h1>
+
+        <div class="options">
+            <!-- ✅ CAMBIADO: Apuntar directamente a index.html -->
+            <button class="option-btn" onclick="window.location.href='stratagems-list/index.html'">
+                <span class="icon">📝</span>
+                <div class="btn-text">
+                    <span class="english-text">STRATAGEM LIST</span>
+                    <span class="spanish-text">LISTA DE ESTRATAGEMAS</span>
+                </div>
+            </button>
+
+            <button class="option-btn" onclick="window.location.href='stratagems-randomizer/index.html'">
+                <span class="icon">🔄</span>
+                <div class="btn-text">
+                    <span class="english-text">STRATAGEM RANDOMIZER</span>
+                    <span class="spanish-text">ALEATORIZADOR DE ESTRATAGEMAS</span>
+                </div>
+            </button>
+
+            <button class="option-btn" onclick="window.location.href='stratagems-pad/index.html'">
+                <div class="btn-text">
+                    <span class="english-text">PAD</span>
+                </div>
+                <span class="icon">⬅️⬆️➡️</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Service Worker para PWA -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(err => console.log('SW fail', err));
+        }
+    </script>
+</body>
+</html>
