@@ -171,6 +171,37 @@
     height: 60px;
   }
 
+  /* === BOTÓN FLOTANTE PARA VOLVER ARRIBA === */
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background: rgba(68, 68, 68, 0.9); /* Gris semitransparente como los otros botones */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 10001;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+    display: none; /* Oculto por defecto */
+  }
+
+  #scrollToTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #scrollToTopBtn:hover {
+    background: rgba(85, 85, 85, 0.9); /* Gris un poco más claro al hover */
+    transform: scale(1.1);
+  }
+
   /* === ESCRITORIO (más de 768px) - ICONOS MÁS GRANDES === */
   @media (min-width: 769px) {
     .estratagema img.icon {
@@ -251,6 +282,11 @@
     #seleccionadas.mas-de-5 .fila img.arrow { width: 24px; height: 24px; }
 
     #seleccionadas.mas-de-5 .card:nth-child(n+11) { display: none; }
+
+    /* 👇 MOSTRAR BOTÓN SOLO EN MÓVILES */
+    #scrollToTopBtn {
+      display: block; /* Visible solo en móviles */
+    }
   }
 
   /* Evita scroll lateral / zoom tipo app */
@@ -353,10 +389,12 @@
   <div id="categorias"></div>
 </div>
 
+<!-- Botón flotante para volver arriba - SOLO en el menú -->
+<button id="scrollToTopBtn" class="scroll-top-btn" title="Volver arriba">↑</button>
+
 <main id="seleccionadas" aria-live="polite"></main>
 
 <script>
-// ... (el resto del JavaScript se mantiene igual)
 document.addEventListener('DOMContentLoaded', ()=>{
 
   const arrowImgs = {
@@ -384,11 +422,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
   const pageTitleBtn = document.getElementById('pageTitleBtn');
   const backWrapper = document.getElementById('backButtonWrapper');
   const backText = document.querySelector('#backButton .back-text');
+  const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
   pageTitleBtn.addEventListener('click', () => {
 	backWrapper.classList.toggle('hide');
 });
-
 
   // listeners del modal (seguro)
   btnEn.addEventListener('click', ()=> chooseLang('en'));
@@ -397,6 +435,47 @@ document.addEventListener('DOMContentLoaded', ()=>{
   toggleMenu.addEventListener('click', ()=> menu.classList.toggle('hide'));
   closeMenu.addEventListener('click', ()=> menu.classList.add('hide'));
   clearButton.addEventListener('click', clearAllSelections);
+
+  // 👇 NUEVO: Mostrar/ocultar botón al hacer scroll en el menú (solo en móviles)
+  menu.addEventListener('scroll', () => {
+    // Solo funcionar en dispositivos móviles
+    if (window.innerWidth <= 768) {
+      if (menu.scrollTop > 200) {
+        scrollToTopBtn.classList.add('show');
+      } else {
+        scrollToTopBtn.classList.remove('show');
+      }
+    }
+  });
+
+  // 👇 NUEVO: Función para volver arriba
+  scrollToTopBtn.addEventListener('click', () => {
+    menu.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  // 👇 NUEVO: Ocultar botón cuando el menú se cierre
+  toggleMenu.addEventListener('click', () => {
+    if (!menu.classList.contains('hide')) {
+      // Menú se abre - resetear posición scroll
+      setTimeout(() => {
+        scrollToTopBtn.classList.remove('show');
+      }, 300);
+    }
+  });
+
+  closeMenu.addEventListener('click', () => {
+    scrollToTopBtn.classList.remove('show');
+  });
+
+  // 👇 NUEVO: Ocultar botón si se redimensiona a escritorio
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      scrollToTopBtn.classList.remove('show');
+    }
+  });
 
   // ayuda: cerrar modal con Escape
   document.addEventListener('keydown', (e)=>{
