@@ -245,6 +245,13 @@
     "combo": ["down", "right", "down", "up", "left", "right"]
   },
   {
+    "id": "speargun",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "ARPÓN", "en": "SPEARGUN" },
+    "image": "https://i.imgur.com/f3f1ikP.png",
+    "combo": ["down", "right", "down", "left", "up", "right"]
+  },
+  {
     "id": "antimateriel-rifle",
     "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
     "name": { "es": "RIFLE ANTIEQUIPAMIENTO", "en": "ANTI-MATERIEL RIFLE" },
@@ -306,6 +313,20 @@
     "name": { "es": "COMANDO", "en": "COMMANDO" },
     "image": "https://i.imgur.com/hm993kJ.png",
     "combo": ["down", "left", "up", "down", "right"]
+  },
+  {
+    "id": "expendable-napalm",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "NAPALM DESECHABLE", "en": "EXPENDABLE NAPALM" },
+    "image": "https://i.imgur.com/Pz04tGf.png",
+    "combo": ["down", "down", "left", "up", "left"]
+  },
+  {
+    "id": "solo-silo",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "SILO SOLITARIO", "en": "SOLO SILO" },
+    "image": "https://i.imgur.com/s3A5z1I.png",
+    "combo": ["down", "up", "right", "down", "down"]
   },
   {
     "id": "expendable-antitank",
@@ -544,6 +565,20 @@
     "name": { "es": "MINAS DE GAS", "en": "GAS MINES" },
     "image": "https://i.imgur.com/azmpyGB.png",
     "combo": ["down", "left", "left", "right"]
+  },
+  {
+    "id": "gas-mines",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "MINAS DE GAS", "en": "GAS MINES" },
+    "image": "https://i.imgur.com/azmpyGB.png",
+    "combo": ["down", "left", "left", "right"]
+  },
+  {
+    "id": "antipersonnel-minefield",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "CAMPO MINADO ANTIPERSONAL", "en": "ANTI-PERSONNEL MINEFIELD" },
+    "image": "https://i.imgur.com/vTx5dAD.png",
+    "combo": ["down", "left", "up", "right"]
   },
   {
     "id": "incendiary-mines",
