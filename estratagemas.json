@@ -567,13 +567,6 @@
     "combo": ["down", "left", "left", "right"]
   },
   {
-    "id": "gas-mines",
-    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
-    "name": { "es": "MINAS DE GAS", "en": "GAS MINES" },
-    "image": "https://i.imgur.com/azmpyGB.png",
-    "combo": ["down", "left", "left", "right"]
-  },
-  {
     "id": "antipersonnel-minefield",
     "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
     "name": { "es": "CAMPO MINADO ANTIPERSONAL", "en": "ANTI-PERSONNEL MINEFIELD" },
@@ -588,6 +581,7 @@
     "combo": ["down", "left", "left", "down"]
   }
 ]
+
 
 
 
