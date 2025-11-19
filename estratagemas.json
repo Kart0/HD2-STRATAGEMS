@@ -252,18 +252,18 @@
     "combo": ["down", "right", "down", "left", "up", "right"]
   },
   {
-    "id": "antimateriel-rifle",
-    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
-    "name": { "es": "RIFLE ANTIEQUIPAMIENTO", "en": "ANTI-MATERIEL RIFLE" },
-    "image": "https://i.imgur.com/MxIx9Kd.png",
-    "combo": ["down", "left", "right", "up", "down"]
-  },
-  {
     "id": "grenade-launcher",
     "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
     "name": { "es": "LANZAGRANADAS", "en": "GRENADE LAUNCHER" },
     "image": "https://i.imgur.com/UCkKJWk.png",
     "combo": ["down", "left", "up", "left", "down"]
+  },
+  {
+    "id": "epoch",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "ÉPOCA", "en": "EPOCH" },
+    "image": "https://i.imgur.com/wMFyKSv.png",
+    "combo": ["down", "left", "up", "left", "right"]
   },
   {
     "id": "deescalator",
@@ -490,6 +490,13 @@
     "combo": ["down", "up", "right", "down", "up", "up"]
   },
   {
+    "id": "laser-sentry",
+    "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
+    "name": { "es": "VIGÍA LASER", "en": "LASER SENTRY" },
+    "image": "https://i.imgur.com/kNpWPAT.png",
+    "combo": ["down", "up", "right", "down", "up", "left"]
+  },
+  {
     "id": "rocket-sentry",
     "category": { "es": "DEFENSIVAS", "en": "DEFENSIVE" },
     "name": { "es": "VIGÍA DE COHETES", "en": "ROCKET SENTRY" },
@@ -581,6 +588,7 @@
     "combo": ["down", "left", "left", "down"]
   }
 ]
+
 
 
 
