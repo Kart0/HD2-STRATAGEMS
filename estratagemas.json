@@ -252,11 +252,11 @@
     "combo": ["down", "right", "down", "left", "up", "right"]
   },
   {
-    "id": "grenade-launcher",
+    "id": "anitmateriel-rifle",
     "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
-    "name": { "es": "LANZAGRANADAS", "en": "GRENADE LAUNCHER" },
-    "image": "https://i.imgur.com/UCkKJWk.png",
-    "combo": ["down", "left", "up", "left", "down"]
+    "name": { "es": "RIFLE ANTIEQUIPAMIENTO", "en": "ANTI-MATERIEL RIFLE" },
+    "image": "https://i.imgur.com/MxIx9Kd.png",
+    "combo": ["down", "left", "right", "up", "down"]
   },
   {
     "id": "epoch",
@@ -264,6 +264,13 @@
     "name": { "es": "ÉPOCA", "en": "EPOCH" },
     "image": "https://i.imgur.com/wMFyKSv.png",
     "combo": ["down", "left", "up", "left", "right"]
+  },
+  {
+    "id": "grenade-launcher",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "LANZAGRANADAS", "en": "GRENADE LAUNCHER" },
+    "image": "https://i.imgur.com/UCkKJWk.png",
+    "combo": ["down", "left", "up", "left", "down"]
   },
   {
     "id": "deescalator",
@@ -588,6 +595,7 @@
     "combo": ["down", "left", "left", "down"]
   }
 ]
+
 
 
 
