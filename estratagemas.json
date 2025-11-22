@@ -392,6 +392,13 @@
     "combo": ["down","right","up","up","up"]
   },
   {
+    "id": "warp-pack",
+    "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
+    "name": { "es": "MOCHILA TRASLOCADORA", "en": "WARP PACK" },
+    "image": "https://i.imgur.com/gNgpjXq.png",
+    "combo": ["down", "left", "right", "down", "left", "right"]
+  },
+  {
     "id": "hover-pack",
     "category": { "es": "SUMINISTROS", "en": "SUPPLY" },
     "name": { "es": "MOCHILA DE VUELO", "en": "HOVER PACK" },
@@ -595,6 +602,7 @@
     "combo": ["down", "left", "left", "down"]
   }
 ]
+
 
 
 
